@@ -1,0 +1,19 @@
+#+TITLE: rcouch
+
+This image when built will build a standalone distribution of rcouch and put it in the
+host's ~/shared-docker directory.
+
+It clones rcouch from http://git-wip-us.apache.org/repos/asf/couchdb.git
+and checks out 1994-merge-rcouch
+
+See  http://markmail.org/message/vn5jvscfs2jnuhgb
+
+: wget http://packages.erlang-solutions.com/erlang/esl-erlang/FLAVOUR_1_general/esl-erlang_15.b~ubuntu~oneiric_amd64.deb
+: mkdir ~/shared-docker
+: bin/build
+: bin/cp-tgz
+
+
+
+
+

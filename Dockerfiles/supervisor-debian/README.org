@@ -1,0 +1,41 @@
+#+TITLE: supervisor
+
+Experimental
+
+Image based on  debian:wheezy
+
+Base image, copied from Quinten Krijger's [[https://github.com/Krijger/docker-cookbooks/tree/master/supervisor][supervisor]].
+
+Build image:
+
+: docker build -t michieljoris/supervisor .
+
+This image and images based on it start the supervisor deamon, no matter what.
+
+Build new images by starting your new Docker file with:
+
+: FROM michieljoris/supervisor
+
+and ending it with
+
+: COPY imagename.conf /etc/supervisor/conf.d/imagename.conf
+
+=appname= can be anything, however it should match a file in the same dir as
+the Dockerfile named =appname.conf=
+
+The contents should be something like:
+
+: [program:appname]
+: command=/command/to/start/app parm1 parm2
+
+Test the image with:
+
+: docker run --name supervisor michieljoris/supervisor
+
+or run your app: 
+
+: docker run -d --name appname appname
+
+This will start the app. If it is a deamonized app the docker container won't
+die, the supervisor process will keep it alive.
+

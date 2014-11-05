@@ -1,0 +1,1 @@
+docker run -i -t -p 5999:5984 --name rcouch-build-stock rcouch-build-stock /bin/bash

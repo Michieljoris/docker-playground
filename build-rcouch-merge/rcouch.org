@@ -1,0 +1,16 @@
+http://jasonwilder.com/blog/2014/08/19/squashing-docker-images/
+http://www.centurylinklabs.com/optimizing-docker-images/?hvid=4wO7Yt
+http://stackoverflow.com/questions/19897743/exposing-a-port-on-a-live-docker-container
+http://supervisord.org/configuration.html#program-x-section-settings
+
+* cleanup image, minimize image
+* run as rcouch user  
+* verify source?  
+* build standalone rcouch and make minimal image 
+* ssl version? 
+* add fauxton and docs  
+* erlang.deb files  
+  http://packages.erlang-solutions.com/erlang/esl-erlang/FLAVOUR_1_general/esl-erlang_16.b~ubuntu~lucid_amd64.deb
+  http://packages.erlang-solutions.com/erlang/esl-erlang/FLAVOUR_1_general/esl-erlang_15.b~ubuntu~oneiric_amd64.deb
+  
+  

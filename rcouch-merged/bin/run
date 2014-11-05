@@ -1,0 +1,1 @@
+docker run -d -p 5985:5984 --name rcouch-merged rcouch-merged 

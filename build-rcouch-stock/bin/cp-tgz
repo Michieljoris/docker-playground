@@ -1,0 +1,1 @@
+docker run --rm -t -i  --name rcouch-stock -v /home/michieljoris/shared-docker:/host rcouch-build-stock cp rcouch-stock.tgz /host
